@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>PERTEMUAN 4 202410101045</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- title form -->
+            <div class="col-md-12 mb-3">
+                <h5><strong><i class="fa fa-pencil-square-o"></i>  Update Existing Film</strong></h5>
+            </div>
+
+            <!-- thumbnail form -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Thumbnail</label>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group form-group-md mb-3">
+                    <input class="form-control form-control-sm" id="formFileSm" type="file"> 
+                </div>
+            </div>
+
+            <!-- title -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Title *</label>
+            </div>
+            <div class="col-md-10">
+                <input type="title" class="form-control form-control-sm mb-3" placeholder=" Tukang Bubur Naik Haji">
+            </div>
+
+            <!-- description -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Description</label>
+            </div>
+            <div class="col-md-10">
+                <textarea class="form-control form-control-sm mb-3" rows="2" id="comment" name="text" placeholder="Description"></textarea>
+            </div>
+
+            <!-- release year -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Release Year</label>
+            </div>
+            <div class="col-md-10">
+                <input type="date" class="form-control form-control-sm mb-3" placeholder="Year Release">
+            </div>
+
+            <!-- language -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Language *</label>
+            </div>
+            <div class="col-md-10">
+                <select class="form-select form-select-sm mb-3">
+                    <option disabled selected>-- Select Language --</option>
+                    <option>English</option>
+                    <option>Indonesia</option>
+                    <option>Korean</option>
+                  </select>
+                 </form>    
+            </div>
+
+            <!-- original language -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Original Language</label>
+            </div>
+            <div class="col-md-10">
+                <select class="form-select form-select-sm mb-3">
+                    <option disabled selected>-- Select Original Language --</option>
+                    <option>English</option>
+                    <option>Indonesia</option>
+                    <option>Korean</option>
+                  </select>
+                 </form>    
+            </div>
+               
+            <!-- form rental duration -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Rental Duration *</label>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group-sm mb-3">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control form-control-sm" placeholder="Duration">
+                        <span class="input-group-text">days</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form rental rate -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Rental Rate *</label>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group-sm mb-3">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" placeholder="Price">
+                    </div>
+                </div>
+            </div>
+
+            <!-- length -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Length</label>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group-sm mb-3">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control form-control-sm" placeholder="Length">
+                        <span class="input-group-text">minutes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- replacement cost -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Replacement Cost *</label>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group-sm mb-3">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control form-control-sm" placeholder="Cost">
+                    </div>
+                </div>
+            </div>
+
+            <!-- rating -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Rating *</label>
+            </div>
+            <div class="col-md-10">
+                <select class="form-select form-select-sm mb-3">
+                    <option disabled selected>-- Select Rating --</option>
+                    <option>PG</option>
+                    <option>13+</option>
+                    <option>17+</option>
+                    <option>Adults</option>
+                  </select>
+                 </form>    
+            </div>
+
+            <!-- Special Feature -->
+            <div class="col-2">
+                <label for="" class="col-form-label-sm">Special Feature</label>
+            </div>
+            <div class="col-md-10">
+                <select class="form-select form-select-sm mb-3" size="4" multiple aria-label="special feature selection" style="overflow: hidden;">
+                    <option >Trailers</option>
+                    <option >Commentaries</option>
+                    <option selected >Deleted Scene</option>
+                    <option selected >Behind the Scene</option>
+                  </select>   
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <button class="btn btn-primary btn-sm"><i class="fa fa-paper-plane-o"></i>  Submit</button>
+                <button class="btn btn-secondary btn-sm"><i class="fa fa-angle-left"></i>  Back</button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
